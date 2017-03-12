@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>RoundRobin</title>
+
+  <!-- Modernizr -->
+  <script src="js/libs/modernizr-2.6.2.min.js"></script>
+  <!-- framework css -->
+  <!--[if gt IE 9]><!-->
+  <link type="text/css" rel="stylesheet" href="css/groundwork.css">
+  <!--<![endif]-->
+  <!--[if lte IE 9]>
+  <link type="text/css" rel="stylesheet" href="css/groundwork-core.css">
+  <link type="text/css" rel="stylesheet" href="css/groundwork-type.css">
+  <link type="text/css" rel="stylesheet" href="css/groundwork-ui.css">
+  <link type="text/css" rel="stylesheet" href="css/groundwork-anim.css">
+  <link type="text/css" rel="stylesheet" href="css/groundwork-ie.css">
+  <![endif]-->
+  <style>
+    body {
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    .player:hover {
+      cursor: default;
+    }
+
+    .playerbox {
+      padding-top: 0;
+      padding-right: 0.2em;
+      padding-bottom: 0;
+      padding-left: 0.2em;
+    }
+
+    .smallbut {
+      padding-top: 0;
+      padding-right: 0.2em;
+      padding-bottom: 0;
+      padding-left: 0.2em;
+      vertical-align: top;
+      background-color: transparent;
+      opacity: 0;
+      color: #fff;
+    }
+
+    .smallbut:hover {
+      opacity: 0.6;
+    }
+
+    input[type="text"] {
+      background: transparent;
+      border: none;
+    }
+
+  </style>
+
+  <script src='underscore.js'></script>
+  <script src="js/react.js"></script>
+  <script src="js/JSXTransformer.js"></script>
+</head>
+
+<body>
+  <div id="app"></div>
+  <script src="js/baobab.min.js"></script>
+  <script type="text/javascript" src="js/libs/jquery-1.10.2.min.js"></script>
+  <script type="text/jsx" src='reactinterface.jsx'> </script>
+  <script type="text/javascript" src='roundrobin.js'></script>
+  <script type="text/javascript" src="js/groundwork.all.js"></script>
+</body>
+
+</html>
